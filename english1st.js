@@ -54,18 +54,25 @@ let fantasy = [{
     year: 2009
 }]
 
+/*
+console.log(fantasy[0])
+console.log(fantasy[1])
+console.log(fantasy[2])
+*/
 //Escolha uma variável e insira uma condição para ela, (condição de sua escolha), com a seguinte mensagem ao console: 
 //IF: "MY FAVORIT MOVIE IS..."
 //ELSE: "NOT EVEN 5 STARS..." 
 
+//não está funcionando corretamente
 let favoriteMovie = "Spider-Man: No Way Home"
 
-if ((comedy[0]||action[0]||fantasy[0]) === "Spider-Man: No Way Home") {
+if (favoriteMovie == (fantasy[0].title||fantasy[1].title||fantasy[2].title)) {
     console.log('MY FAVORIT MOVIE IS...', favoriteMovie)
 } else {
     console.log('NOT EVEN 5 STARS...')
 }
 
-
+//|| fantasy[1, 2] || fantasy[2, 2]
 
 /* this.state.comedy.title[2] */
+//Dentro do teu if fantasy.some(function(item) { return item.title == fantasynameseila; })
